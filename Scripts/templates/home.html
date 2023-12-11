@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salary Prediction</title>
+</head>
+<body>
+    <h1>Input</h1>
+    <form action="/predict" method="post">
+        <label for="age">Age:</label>
+        <input type="text" id="age" name="age" required=""><br>
+
+        <label for="education">Education:</label>
+        <select id="education" name="education" required>
+            <option value="11">HS-grad</option>
+            <option value="15">Some-college</option>
+            <option value="9">Bachelors</option>
+            <option value="12">Masters</option>
+            <option value="8">Assoc-voc</option>
+            <option value="1">11th</option>
+            <option value="7">Assoc-acdm</option>
+            <option value="0">10th</option>
+            <option value="5">7th-8th</option>
+            <option value="14">Prof-school</option>
+            <option value="6">9th</option>
+            <option value="2">12th</option>
+            <option value="10">Doctorate</option>
+            <option value="4">5th-6th</option>
+            <option value="3">1st-4th</option>
+            <option value="13">Preschool</option>
+            <option value="14">Holand-Netherlands</option>
+        </select>
+
+        <label for="hours-per-week">Hours per week</label>
+        <input type="text" id="hours-per-week" name="hours_per_week" required><br>
+
+        <label for="native-country">Native Country:</label>
+        <select id="native-country" name="native_country" required>
+            <option value="38">United States</option>
+          <option value="25">Mexico</option>
+          <option value="29">Philippines</option>
+          <option value="10">Germany</option>
+          <option value="32">Puerto-Rico</option>
+          <option value="1">Canada</option>
+          <option value="7">El-Salvador</option>
+          <option value="18">India</option>
+          <option value="4">Cuba</option>
+          <option value="2">China</option>
+          <option value="8">England</option>
+          <option value="22">Jamaica</option>
+          <option value="34">South</option>
+          <option value="5">Dominican-Republic</option>
+          <option value="21">Italy</option>
+          <option value="23">Japan</option>
+          <option value="39">Vietnam</option>
+          <option value="12">Guatemala</option>
+          <option value="3">Columbia</option>
+          <option value="30">Poland</option>
+          <option value="13">Haiti</option>
+          <option value="31">Portugal</option>
+          <option value="19">Iran</option>
+          <option value="35">Taiwan</option>
+          <option value="26">Nicaragua</option>
+          <option value="11">Greece</option>
+          <option value="6">Ecuador</option>
+          <option value="28">Peru</option>
+          <option value="20">Ireland</option>
+          <option value="9">France</option>
+          <option value="36">Thailand</option>
+          <option value="16">Hong</option>
+          <option value="0">Cambodia</option>
+          <option value="37">Trinadad&Tobago</option>
+          <option value="40">Yugoslavia</option>
+          <option value="15">Honduras</option>
+          <option value="33">Scotland</option>
+          <option value="27">Outlying-US(Guam-USVI-etc)</option>
+          <option value="24">Laos</option>
+          <option value="17">Hungary</option>
+          <option value="14">Holand-Netherlands</option>
+        </select><br>
+
+        <br /><br />
+        <input type="submit" value="Predict"/>
+    </form>
+</body>
+</html>

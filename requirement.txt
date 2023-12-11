@@ -1,0 +1,5 @@
+Python==3.10.9
+Flask==3.0.0
+Time
+numpy
+pytorch_tabnet

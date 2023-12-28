@@ -13,11 +13,7 @@
           height: 100vh; 
           margin-top: 150px;
         }
-  
-        h2 {
-          color: #654E92;
-        }
-  
+
         form {
           max-width: 400px;
           margin: 0 auto;
@@ -25,6 +21,11 @@
           padding: 20px;
           border-radius: 8px;
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+          margin-bottom: 20px;
+          text-align: center;
         }
   
         label {
@@ -66,6 +67,7 @@
         input[type="submit"]:hover {
           background-color: #384E7E;
         }
+        
       </style>
 </head>
 <body>
@@ -73,6 +75,12 @@
     <form action="/predict" method="post">
         <label for="age">Age:</label>
         <input type="text" id="age" name="age" required=""><br>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+          <option value="1">Male</option>
+          <option value="0">Female</option>
+        </select>
 
         <label for="education">Education:</label>
         <select id="education" name="education" required>
@@ -97,51 +105,6 @@
 
         <label for="hours-per-week">Hours per week</label>
         <input type="text" id="hours-per-week" name="hours_per_week" required><br>
-
-        <label for="native-country">Native Country:</label>
-        <select id="native-country" name="native_country" required>
-            <option value="38">United States</option>
-          <option value="25">Mexico</option>
-          <option value="29">Philippines</option>
-          <option value="10">Germany</option>
-          <option value="32">Puerto-Rico</option>
-          <option value="1">Canada</option>
-          <option value="7">El-Salvador</option>
-          <option value="18">India</option>
-          <option value="4">Cuba</option>
-          <option value="2">China</option>
-          <option value="8">England</option>
-          <option value="22">Jamaica</option>
-          <option value="34">South</option>
-          <option value="5">Dominican-Republic</option>
-          <option value="21">Italy</option>
-          <option value="23">Japan</option>
-          <option value="39">Vietnam</option>
-          <option value="12">Guatemala</option>
-          <option value="3">Columbia</option>
-          <option value="30">Poland</option>
-          <option value="13">Haiti</option>
-          <option value="31">Portugal</option>
-          <option value="19">Iran</option>
-          <option value="35">Taiwan</option>
-          <option value="26">Nicaragua</option>
-          <option value="11">Greece</option>
-          <option value="6">Ecuador</option>
-          <option value="28">Peru</option>
-          <option value="20">Ireland</option>
-          <option value="9">France</option>
-          <option value="36">Thailand</option>
-          <option value="16">Hong</option>
-          <option value="0">Cambodia</option>
-          <option value="37">Trinadad&Tobago</option>
-          <option value="40">Yugoslavia</option>
-          <option value="15">Honduras</option>
-          <option value="33">Scotland</option>
-          <option value="27">Outlying-US(Guam-USVI-etc)</option>
-          <option value="24">Laos</option>
-          <option value="17">Hungary</option>
-          <option value="14">Holand-Netherlands</option>
-        </select><br>
         <br /><br />
         <input type="submit" value="Predict"/>
     </form>

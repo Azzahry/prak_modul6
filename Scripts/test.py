@@ -23,11 +23,12 @@ def predict():
     age = float(request.form['age'])
     edu = float(request.form['education'])
     hpw = float(request.form['hours_per_week'])
-    nat_count = float(request.form['native_country'])
+    gender = float(request.form['gender'])
+    
     start = time.time()
 
-    prob = loaded.predict(np.array([[age, edu, hpw, nat_count]]))
-    runtimes = round(time.time() - start, 4)
+    prob = loaded.predict(np.array([[age, edu, hpw, gender]]))
+    runtimes = round(time.time() - start, 3)
 
     result = prob.tolist()[0]
     pred_label = list(class_list.keys())[result]
